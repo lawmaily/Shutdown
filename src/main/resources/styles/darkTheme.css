@@ -1,0 +1,63 @@
+/* Стиль для MenuBar в состоянии покоя */
+.menu-bar {
+    -fx-background-color: #1a1a1a;
+}
+
+.menu-bar .label {
+    -fx-text-fill: white;
+}
+
+/* Стиль для Menu в состоянии покоя */
+.menu {
+    -fx-background-color: #1a1a1a;
+}
+
+.menu .label {
+    -fx-text-fill: white;
+}
+
+/* Стиль для Menu при наведении и нажатии */
+.menu:hover,
+.menu:showing {
+    -fx-background-color: #deba1f;
+}
+
+/* Стиль для текста Menu при наведении и нажатии */
+.menu:hover .label,
+.menu:showing .label {
+    -fx-text-fill: #1a1a1a;
+}
+
+/* Стиль для MenuItem в состоянии покоя */
+.menu-item .label {
+    -fx-text-fill: white;
+}
+
+/* Стиль для MenuItem при наведении */
+.menu-item:hover {
+    -fx-background-color: #deba1f;
+}
+
+.menu-item:hover .label {
+    -fx-text-fill: #1a1a1a;
+}
+
+/* Стиль для выбранного MenuItem */
+.menu-item:focused {
+    -fx-background-color: #deba1f;
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: #1a1a1a;
+}
+
+/* Стиль для контекстного меню */
+.context-menu {
+    -fx-background-color: #1a1a1a;
+}
+
+/* Стиль для MenuItem, чтобы избежать перекрытия стилей Menu */
+.menu:hover .menu-item .label,
+.menu:showing .menu-item .label {
+    -fx-text-fill: white;
+}
