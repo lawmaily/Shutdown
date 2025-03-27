@@ -51,11 +51,11 @@ public class Slider extends Group {
     }
 
     public void play() {
-        scaleUp.play(); // Увеличение
+        scaleUp.play();
     }
 
     public void stop() {
-        scaleDown.play(); // Уменьшение
+        scaleDown.play();
     }
 
     public Arc getArc() {

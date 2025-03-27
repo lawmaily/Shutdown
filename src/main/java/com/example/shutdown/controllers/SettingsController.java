@@ -11,14 +11,14 @@ public class SettingsController {
 
     public SettingsController(SettingsView settingsView) {
         this.settingsView = settingsView;
-//        this.settingsService = new SettingsService();
+        this.settingsService = new SettingsService();
 
         setupEventHandlers();
     }
 
     private void setupEventHandlers() {
         settingsView.getCloseButton().setOnAction(e -> settingsView.close());
-//        settingsView.getApplyButton().setOnAction(e -> settingsService.saveSettings());
+        settingsView.getApplyButton().setOnAction(e -> settingsService.saveSettings());
     }
 
 

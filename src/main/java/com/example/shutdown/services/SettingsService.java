@@ -56,6 +56,7 @@ public class SettingsService {
             e.printStackTrace();
             System.err.println("Failed to save settings to: " + settingsFile.getAbsolutePath());
         }
+
     }
 
     private AppSettings loadSettings() {

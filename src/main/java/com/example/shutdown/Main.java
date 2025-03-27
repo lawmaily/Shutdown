@@ -12,9 +12,6 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
-import java.io.InputStream;
-import java.util.Objects;
-
 
 public class Main extends Application {
     public static void main(String[] args) {
@@ -37,7 +34,6 @@ public class Main extends Application {
 
 
         Image icon = new Image(getClass().getResourceAsStream("/img/shkiper.png"));
-        System.out.println(getClass().getResourceAsStream("/img/shkiper.png"));
         Scene scene = new Scene(mainView.getPane(), screenService.windowWidth, screenService.windowHeight);
         scene.getStylesheets().add(getClass().getResource("/styles/darkTheme.css").toExternalForm());
         stage.setTitle("Shkiper");

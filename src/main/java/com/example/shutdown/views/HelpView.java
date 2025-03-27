@@ -40,7 +40,7 @@ public class HelpView {
         helpStage.setWidth(windowWidth * 0.85);
         helpStage.setHeight(windowHeight * 0.77);
         helpStage.setScene(helpScene);
-//        helpScene.getStylesheets().add((Objects.requireNonNull(getClass().getResource("/styles/darkTheme.css"))).toExternalForm());
+        helpScene.getStylesheets().add(getClass().getResource("/styles/darkTheme.css").toExternalForm());
 
         closeButton.getStyleClass().add("smallButton");
         closeButton.setStyle(

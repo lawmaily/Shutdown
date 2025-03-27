@@ -30,7 +30,7 @@ public class MainView {
         menuBar = new MenuBar();
         settingsItem = new MenuItem("Settings");
         helpItem = new MenuItem("Help");
-        slider = new Slider(windowWidth * 0.5, windowHeight * 0.4, windowWidth * 0.37, 90, 360);
+        slider = new Slider(windowWidth * 0.5, windowHeight * 0.435, windowWidth * 0.37, 90, 360);
 
         initializeUI();
     }
@@ -47,9 +47,10 @@ public class MainView {
     private void initializeTimerText() {
         timerText.getStyleClass().add("timerText");
         timerText.setText("00:00:00");
-        timerText.setStyle("-fx-font-size: " + windowWidth * 0.177 + ";");
-        AnchorPane.setTopAnchor(timerText, windowHeight * 0.345);
-        AnchorPane.setLeftAnchor(timerText, windowWidth * 0.183);
+        timerText.setStyle("-fx-font-size: " + windowWidth * 0.177 + ";" +
+                "-fx-font-family: Courier New;");
+        AnchorPane.setTopAnchor(timerText, windowHeight * 0.34);
+        AnchorPane.setLeftAnchor(timerText, windowWidth * 0.175);
 
         pane.getChildren().add(timerText);
     }
